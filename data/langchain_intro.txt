@@ -1,0 +1,6 @@
+LangChain is a library for building applications based on language models (LLMs). The main modules are:
+1. Chains — for sequential data processing.
+2. Agents — allow LLMs to perform tasks.
+3. Memory — stores the context of a conversation.
+
+LangChain supports models like GPT-3, Alpaca, and integration with external tools.

@@ -1,0 +1,6 @@
+Machine Learning (ML) is a field of artificial intelligence that focuses on creating algorithms capable of learning from data. The main types of machine learning are:
+1. Supervised Learning — data includes inputs and corresponding outputs.
+2. Unsupervised Learning — data lacks labels, and the model finds hidden patterns.
+3. Reinforcement Learning — the model learns through interaction with the environment.
+
+Popular libraries: TensorFlow, PyTorch, Scikit-learn.

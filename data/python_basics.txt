@@ -1,0 +1,6 @@
+Python is a popular programming language known for its simplicity and readability. The main data structures are:
+- Lists: [1, 2, 3]
+- Tuples: (1, 2, 3)
+- Dictionaries: {"key": "value"}
+
+Python is used in web development, data analysis, machine learning, and other fields.

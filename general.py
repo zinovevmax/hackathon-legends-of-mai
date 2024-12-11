@@ -1,8 +1,8 @@
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain_ollama import OllamaLLM
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
 
 hf_embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
@@ -28,16 +28,16 @@ rag_chain = RetrievalQA.from_chain_type(
     chain_type_kwargs={"prompt": prompt},
     return_source_documents=True,
 )
+for i in range(10):
+    question = input("Введите ваш вопрос: ")
 
-question = input("Введите ваш вопрос: ")
+    result = rag_chain.invoke({"query": question})
 
-result = rag_chain.invoke({"query": question})
+    print("\nОтвет:")
+    print(result["result"])
 
-print("\nОтвет:")
-print(result["result"])
-
-print("\nИспользованный контекст:")
-for doc in result["source_documents"]:
-    print(f"Source: {doc.metadata.get('source', 'Unknown')}")
-    print(doc.page_content)
-    print("-" * 50)
+    print("\nИспользованный контекст:")
+    for doc in result["source_documents"]:
+        print(f"Source: {doc.metadata.get('source', 'Unknown')}")
+        print(doc.page_content)
+        print("-" * 50)

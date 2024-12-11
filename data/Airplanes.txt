@@ -1,0 +1,41 @@
+Here are 10 facts about airplanes:
+Airplanes are incredibly safe. Despite what movies might make you think, flying is one of the safest modes of transportation.
+The first commercial flight carried only four passengers. In 1919, a flight between Paris and London marked the beginning of commercial aviation.
+ The Boeing 747 can hold over 1,000 people. During a refugee evacuation, a Boeing 747 once carried a record-breaking number of passengers.
+ Airplane doors can't be opened in flight. Safety features prevent doors from being opened while the plane is in the air.
+Every plane has an oxygen supply for passengers. In case of a sudden loss of cabin pressure, oxygen masks will automatically deploy.
+A plane's weight changes during flight. Due to the burning of fuel, a plane becomes lighter as it travels.
+The English language is used for international air traffic control. Pilots and air traffic controllers around the world communicate in English.
+There are more than 30,000 flights in the US every day. Air travel is a major part of daily life in many countries.
+The world's busiest airport is in Atlanta. Hartsfield-Jackson Atlanta International Airport handles millions of passengers each year.
+Only a small percentage of the world's population has ever flown on a plane. Air travel is still a luxury for many people.
+Airplane Structure: A General Overview and Detailed Breakdown
+An airplane is a complex engineering structure designed for flight in the atmosphere. Its structure consists of many interconnected components, each of which performs a specific function.
+General structure of an airplane
+In the most general terms, an airplane can be represented as consisting of the following main parts:
+Fuselage: This is the central body of the aircraft, which houses passengers, cargo, fuel, crew, and equipment. The fuselage provides structural strength and aerodynamic characteristics for the aircraft.
+Wing: The main lifting surface of the aircraft, creating lift due to the difference in air pressure above and below the wing.
+Empennage: Consists of the stabilizer and rudder. The stabilizer provides longitudinal stability for the aircraft, and the rudder allows you to change course.
+Landing gear: Supports the aircraft on the ground, used for takeoff and landing.
+Engine: Converts fuel energy into thrust, which is necessary for aircraft movement.
+Detailed breakdown of aircraft components
+Fuselage
+Nose section: It usually houses the cockpit, radar equipment, and other flight control systems.
+Center section: In passenger aircraft, passenger cabins are located here, and in cargo aircraft, cargo compartments.
+Tail section: The empennage, auxiliary power units, and other systems are located here.
+Wing
+Wing profile: Determines the aerodynamic characteristics of the wing.
+Wing mechanization: A set of movable wing elements (flaps, slats, spoilers) that allow changing the aerodynamic characteristics of the wing during flight.
+Wing fuel tanks: Store fuel for engines.
+Empennage
+Stabilizer: A horizontal surface that provides longitudinal stability for the aircraft.
+Rudder: A vertical surface that allows you to change the course of the aircraft.
+Fin: A fixed part of the empennage to which the rudder is attached.
+Landing gear
+Main landing gear: Located under the fuselage and provides the main load-bearing capacity during landing.
+Nose landing gear: Located under the nose of the aircraft and provides steering on the ground.
+Landing gear retraction system: Allows you to retract the landing gear into special niches in the wing or fuselage during flight to reduce aerodynamic drag.
+Engine
+Turbojet engine: Used on most modern aircraft, converts the energy of fuel combustion into mechanical energy that rotates an air screw or turbine.
+Propeller: Creates thrust by rotating blades.
+Turbine: Creates thrust by accelerating the airflow.

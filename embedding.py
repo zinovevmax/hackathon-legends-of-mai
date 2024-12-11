@@ -1,10 +1,11 @@
 import os
 from langchain.schema import Document
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
-
+from langchain_chroma import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 def load_text_files(directory):
+    print('loading documents')
     documents = []
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
@@ -12,21 +13,29 @@ def load_text_files(directory):
             with open(filepath, "r", encoding="utf-8") as file:
                 content = file.read()
                 documents.append(Document(page_content=content, metadata={"source": filename}))
+                print(f"{filename} ready")
     return documents
 
 
 documents = load_text_files("data")
-
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+docs = text_splitter.split_documents(documents)
+print(len(docs))
+if len(docs) == 0:
+    raise ValueError("no split ", len(docs))
 hf_embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
-vectorstore = Chroma.from_documents(documents, hf_embeddings, persist_directory="chroma_storage")
-
+print("creating vector store")
+vectorstore = Chroma.from_documents(docs, hf_embeddings, persist_directory="chroma_storage")
 print("Vectorstore saved successfully.")
 
-query = "what is Agents in langchain"
-results = vectorstore.similarity_search(query, k=3)
+# Получение всех данных: текстов, метаданных и векторов
+data = vectorstore._collection.get()
 
-for result in results:
-    print(f"Content: {result.page_content}")
-    print(f"Source: {result.metadata['source']}")
+# Соединение текстов с векторами
+for i in range(len(data["documents"])):
+    print(f"Chunk {i}: {data['documents'][i]}")
+    print(f"Metadata: {data['metadatas'][i]}")
+    #print(f"Vector: {data['embeddings'][i]}")
     print("-" * 50)
+
